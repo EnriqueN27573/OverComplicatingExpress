@@ -1,11 +1,11 @@
 // Buffer Line
 import TodoValidation from "./TodoValidation";
-import BaseRepository from "../utils/BaseRepository";
+import IBaseRepository from "../utils/IBaseRepository";
 import { TodoData } from "../utils/types";
 
 type Todo = TodoData & { id: number };
 
-class TodoRepository extends TodoValidation implements BaseRepository {
+class TodoRepository extends TodoValidation implements IBaseRepository {
   private data: Todo[] = [];
 
   constructor() {
