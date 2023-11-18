@@ -1,6 +1,6 @@
 // Buffer Line
 
-interface BaseRepository {
+interface IBaseRepository {
   findAll(): any[];
   findAllById(id: number | number[]): any[];
   findAllByParam(paramObject: any): any[];
@@ -9,4 +9,4 @@ interface BaseRepository {
   deleteById(id: number | number[]): {};
 }
 
-export default BaseRepository;
+export default IBaseRepository;
