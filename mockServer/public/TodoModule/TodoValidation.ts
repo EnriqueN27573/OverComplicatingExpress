@@ -19,6 +19,7 @@ class TodoValidation extends HttpResponse {
     super();
   }
 
+  /* should not throw error, should use HttpResponse immediately */
   protected validateSubmittedData(object: ObjectAny) {
     const extraObjectKeys = Object.keys(object).filter(
       (key) => this.objectKeys.indexOf(key) === -1
